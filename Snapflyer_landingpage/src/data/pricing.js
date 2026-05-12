@@ -1,0 +1,36 @@
+export const plans = [
+  {
+    id: 'starter',
+    name: 'Starter',
+    price: 12,
+    period: '/mo',
+    features: [
+      '75 Flyer Generations',
+      'Bulk ZIP generation',
+      'Full access to 128 templates',
+      'All Export formats',
+      'Full dashboard QR tracking',
+      'Remove watermark',
+      'Fast rendering speed',
+    ],
+    cta: 'Start Starter Trial',
+    highlighted: true,
+  },
+  {
+    id: 'pro',
+    name: 'Pro',
+    price: 29,
+    period: '/mo',
+    features: [
+      '250+ Flyer Generations',
+      'Bulk ZIP generation',
+      'Full access to 128 templates',
+      'All + high-res Export formats',
+      'Full + team analytics QR tracking',
+      'Remove watermark',
+      'Ultra-fast rendering speed',
+    ],
+    cta: 'Get started Pro',
+    highlighted: false,
+  },
+];

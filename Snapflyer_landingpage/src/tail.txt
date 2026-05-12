@@ -1,0 +1,15 @@
+
+  .legal-summary-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .legal-hero-title {
+    font-size: 1.875rem;
+  }
+
+  .legal-body {
+    padding: 28px 16px;
+  }
+}
