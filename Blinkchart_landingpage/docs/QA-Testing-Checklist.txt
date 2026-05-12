@@ -1,0 +1,55 @@
+# BlinkChart Landing Page — QA & Testing Checklist
+
+| #  | Category                | Checklist Item                                                      | Status   | Notes/Instructions                                  |
+|----|-------------------------|---------------------------------------------------------------------|----------|-----------------------------------------------------|
+| 1  | Core Sections           | Hero section with headline and CTA present                          | PASS     | Confirmed in Hero.tsx                               |
+| 2  | Core Sections           | Problem/benefit section visible                                     | PASS     | Below hero headline                                 |
+| 3  | Core Sections           | Sample chart output visuals shown                                   | PASS     | Images render in Hero.tsx                           |
+| 4  | Core Sections           | 3-step workflow (upload → generate → export) described              | PASS     | Feature.tsx                                         |
+| 5  | Core Sections           | Target users section (founders, analysts, students, marketers)      | PASS     | Feature.tsx                                         |
+| 6  | Core Sections           | FAQ page/section exists and accessible                              | PASS     | FAQSection.tsx, /faq route                          |
+| 7  | Core Sections           | Pricing section present                                             | PASS     | Pricing.tsx                                         |
+| 8  | Core Sections           | Footer with support email and legal links                           | PASS     | Footer.tsx                                          |
+| 9  | CTA & Integration       | All CTAs point to waitlist form URL                                 | PASS     | All CTAs use /joinwaitlist                          |
+| 10 | CTA & Integration       | No old URLs (e.g., app.blinkchart.com) remain                       | PASS     | Searched, none found                                |
+| 11 | CTA & Integration       | External links use target="_blank" and rel="noopener noreferrer"    | PASS     | Footer, PricingCard                                 |
+| 12 | CTA & Integration       | Primary CTAs route to /joinwaitlist                                 | PASS     | App.tsx, Hero.tsx, Pricing.tsx, PricingCard.tsx    |
+| 13 | CTA & Integration       | /joinwaitlist route renders waitlist form page                      | PASS     | App.tsx                                             |
+| 14 | Marketing Copy          | "Create charts in seconds" phrase used                              | PASS     | Hero.tsx                                            |
+| 15 | Marketing Copy          | CTA labels standardized as "Join Waitlist — 1 Month Free Trial"     | PASS     | Hero.tsx, Pricing.tsx, PricingCard.tsx              |
+| 16 | Marketing Copy          | Feature descriptions are clear, not vague                           | PASS     | Feature.tsx                                         |
+| 17 | Marketing Copy          | Export formats: PNG, SVG, PDF described consistently                | PASS     | Feature.tsx, FAQSection.tsx                         |
+| 18 | FAQ Completeness        | At least 10 FAQ questions present                                   | PASS     | FAQSection.tsx                                      |
+| 19 | FAQ Completeness        | Required FAQ questions included                                     | PASS     | FAQSection.tsx                                      |
+| 20 | Navigation & Routes     | All required routes exist and work                                  | PASS     | App.tsx                                             |
+| 21 | Technical Quality       | No TypeScript errors                                                | PASS     | Build/type check                                    |
+| 22 | Technical Quality       | Project builds successfully                                         | PASS     | Build output                                        |
+| 23 | Technical Quality       | Components render valid JSX                                         | PASS     | Manual/code review                                  |
+| 24 | Technical Quality       | No broken imports                                                   | PASS     | Build output                                        |
+| 25 | Technical Quality       | No console errors                                                   | PASS     | Build/browser console                               |
+| 26 | Technical Quality       | No unused components                                                | PASS     | Code review                                         |
+| 27 | SEO & Metadata          | Title tag present                                                   | PASS     | index.html                                          |
+| 28 | SEO & Metadata          | Meta description present                                            | PASS     | index.html                                          |
+| 29 | SEO & Metadata          | Open Graph tags present                                             | PASS     | index.html                                          |
+| 30 | SEO & Metadata          | Twitter card tags present                                           | PASS     | index.html                                          |
+| 31 | SEO & Metadata          | favicon present                                                     | PASS     | public/favicon.ico, index.html                      |
+| 32 | SEO & Metadata          | robots.txt present                                                  | PASS     | public/robots.txt                                   |
+| 33 | SEO & Metadata          | sitemap.xml present                                                 | PASS     | public/sitemap.xml                                  |
+| 34 | Trust & Legal           | Privacy Policy page exists                                          | PASS     | Privacy.tsx, /privacy                               |
+| 35 | Trust & Legal           | Terms of Use page exists                                            | PASS     | Terms.tsx, /terms                                   |
+| 36 | Trust & Legal           | Footer contains support email                                       | PASS     | Footer.tsx                                          |
+| 37 | Trust & Legal           | Support email uses mailto link                                      | PASS     | Footer.tsx                                          |
+| 38 | Device Compatibility    | Responsive: Desktop (1920px, 1440px)                                | PASS     | CSS grid/flex, manual test                          |
+| 39 | Device Compatibility    | Responsive: Laptop (1280px)                                         | PASS     | CSS grid/flex, manual test                          |
+| 40 | Device Compatibility    | Responsive: Tablet (768px)                                          | PASS     | CSS grid/flex, manual test                          |
+| 41 | Device Compatibility    | Responsive: Mobile (375px)                                          | PASS     | CSS grid/flex, manual test                          |
+| 42 | Browser Compatibility   | Chrome                                                              | PASS     | Manual/device test                                  |
+| 43 | Browser Compatibility   | Firefox                                                             | PASS     | Manual/device test                                  |
+| 44 | Browser Compatibility   | Safari                                                              | PASS     | Manual/device test (minor scroll warning)           |
+| 45 | Browser Compatibility   | Edge                                                                | PASS     | Manual/device test                                  |
+| 46 | Performance & Cleanup   | No console.log statements                                           | PASS     | Code search                                         |
+| 47 | Performance & Cleanup   | No TODO or FIXME comments                                           | PASS     | Code search                                         |
+| 48 | Performance & Cleanup   | No unused imports                                                   | PASS     | Code search, build                                  |
+| 49 | Performance & Cleanup   | No oversized images                                                 | WARNING  | Some images >1MB                                    |
+| 50 | Performance & Cleanup   | No blocking scripts                                                 | PASS     | index.html, build output                            |
+npm run dev

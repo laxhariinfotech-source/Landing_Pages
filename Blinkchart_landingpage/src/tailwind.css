@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-body text-slate-900 antialiased;
+    background: linear-gradient(180deg, #eef4ff 0%, #f7f5ff 35%, #ffffff 100%);
+  }
+}
+
+@layer utilities {
+  .surface-card {
+    @apply rounded-2xl border border-white/70 bg-white/85 shadow-lg shadow-indigo-950/5 backdrop-blur;
+  }
+}

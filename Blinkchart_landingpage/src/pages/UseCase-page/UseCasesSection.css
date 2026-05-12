@@ -1,0 +1,147 @@
+.usecase-section {
+  padding: 80px 8%;
+  background: #ffffff;
+}
+
+.usecase-title {
+  font-size: 36px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.usecase-subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 50px;
+}
+
+.usecase-container {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* LEFT TABS */
+.usecase-tabs {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.usecase-tab {
+  padding: 14px 18px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: left;
+  border-radius: 10px;
+  background: #f6f6f6;
+  border: 1px solid #e5e5e5;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.usecase-tab:hover {
+  background: #fff3eb;
+}
+
+.usecase-tab.active {
+  background: #FF6600;
+  border-color: #FF6600;
+  box-shadow: 0 8px 24px rgba(255, 102, 0, 0.25);
+  color: white;
+}
+
+/* RIGHT CONTENT */
+.usecase-content {
+  background: #fff;
+  border-radius: 18px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+  animation: fadeIn 0.4s ease;
+}
+
+.usecase-content h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.usecase-detail {
+  margin-bottom: 16px;
+}
+
+.usecase-detail strong {
+  color: #FF6600;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.usecase-detail p {
+  color: #444;
+  line-height: 1.6;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .usecase-container {
+    grid-template-columns: 1fr;
+  }
+
+  .usecase-tabs {
+    flex-direction: row;
+    overflow-x: auto;
+  }
+
+  .usecase-tab {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .usecase-section {
+    padding: 56px 5%;
+  }
+
+  .usecase-title {
+    font-size: 30px;
+  }
+
+  .usecase-subtitle {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+
+  .usecase-tabs {
+    flex-direction: column;
+    overflow-x: visible;
+  }
+
+  .usecase-tab {
+    white-space: normal;
+    width: 100%;
+  }
+
+  .usecase-content {
+    padding: 24px 18px;
+  }
+
+  .usecase-content h3 {
+    font-size: 22px;
+  }
+}

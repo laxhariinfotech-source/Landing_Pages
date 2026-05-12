@@ -1,0 +1,155 @@
+/* ===============================
+InstallSteps.css
+Premium Light BlinkChart Theme
+=============================== */
+
+.install-strip {
+  position: relative;
+
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 22px;
+
+  padding: 70px 7%;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(255,106,0,0.08),
+      transparent 30%
+    ),
+    linear-gradient(
+      180deg,
+      #fffaf5 0%,
+      #fff7ed 100%
+    );
+
+  overflow: hidden;
+}
+
+/* subtle glow */
+.install-strip::before{
+  content: "";
+
+  position: absolute;
+  top: -120px;
+  right: -120px;
+
+  width: 300px;
+  height: 300px;
+
+  background: rgba(255,106,0,0.08);
+
+  filter: blur(100px);
+  border-radius: 50%;
+}
+
+/* CARD */
+.install-item {
+  position: relative;
+
+  display: flex;
+  gap: 18px;
+  align-items: center;
+
+  padding: 28px;
+
+  border-radius: 24px;
+
+  background: rgba(255,255,255,0.78);
+
+  border: 1px solid rgba(255,106,0,0.12);
+
+  backdrop-filter: blur(14px);
+
+  box-shadow:
+    0 10px 30px rgba(255,106,0,0.06);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border 0.35s ease;
+}
+
+/* hover */
+.install-item:hover{
+  transform: translateY(-6px);
+
+  border-color: rgba(255,106,0,0.28);
+
+  box-shadow:
+    0 20px 40px rgba(255,106,0,0.12);
+}
+
+/* NUMBER */
+.install-number {
+  flex-shrink: 0;
+
+  width: 52px;
+  height: 52px;
+
+  border-radius: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff6a00,
+      #ff8c3a
+    );
+
+  color: white;
+
+  font-size: 18px;
+  font-weight: 800;
+
+  box-shadow:
+    0 10px 20px rgba(255,106,0,0.25);
+}
+
+/* TEXT */
+.install-item p {
+  color: #111827;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+/* small accent line */
+.install-item::after{
+  content: "";
+
+  position: absolute;
+  left: 28px;
+  bottom: 0;
+
+  width: 60px;
+  height: 3px;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ff6a00,
+      transparent
+    );
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+
+  .install-strip{
+    grid-template-columns: 1fr;
+    padding: 50px 24px;
+  }
+
+  .install-item{
+    padding: 24px;
+  }
+
+}

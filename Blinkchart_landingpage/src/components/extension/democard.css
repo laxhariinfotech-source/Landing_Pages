@@ -1,0 +1,488 @@
+/* =========================================
+DEMO CARD
+========================================= */
+
+.demo-card{
+  display: grid;
+  grid-template-columns: 1.45fr .75fr;
+  gap: 34px;
+
+  margin-top: 70px;
+  padding: 34px;
+
+  border-radius: 34px;
+
+  background: #ffffff;
+
+  border: 1px solid #f2e7da;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,.04);
+}
+
+/* =========================================
+LEFT
+========================================= */
+
+.demo-header{
+  display: flex;
+  align-items: center;
+  gap: 22px;
+
+  margin-bottom: 30px;
+}
+
+.demo-number{
+  min-width: 68px;
+  height: 68px;
+
+  border-radius: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff6a00,
+      #ff944d
+    );
+
+  color: white;
+  font-size: 22px;
+  font-weight: 800;
+
+  box-shadow:
+    0 10px 25px rgba(255,106,0,.25);
+}
+
+.demo-header-content h2{
+  font-size: 42px;
+  line-height: 1.1;
+  color: #111827;
+}
+
+.demo-header-content p{
+  margin-top: 10px;
+  color: #6b7280;
+  font-size: 18px;
+}
+
+/* =========================================
+TABLE
+========================================= */
+
+.demo-table{
+  overflow-x: auto;
+
+  border-radius: 24px;
+  border: 1px solid #ece4da;
+
+  background: #fff;
+}
+
+.demo-table table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.demo-table th{
+  padding: 18px;
+
+  background: #f8f4ee;
+
+  color: #6b7280;
+  text-align: left;
+  font-size: 16px;
+}
+
+.demo-table td{
+  padding: 18px;
+
+  border-top: 1px solid #f1ece6;
+
+  color: #111827;
+  font-weight: 500;
+}
+
+/* =========================================
+RIGHT PANEL
+========================================= */
+
+.ai-card{
+  position: sticky;
+  top: 100px;
+
+  padding: 38px;
+  border-radius: 30px;
+
+  background:
+    linear-gradient(
+      180deg,
+      #fffaf5,
+      #fff6ee
+    );
+
+  border: 1px solid #f3ddca;
+}
+
+.ai-tag{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 12px 20px;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff6a00,
+      #ff944d
+    );
+
+  color: white;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .05em;
+
+  box-shadow:
+    0 12px 30px rgba(255,106,0,.2);
+}
+
+.ai-card h3{
+  font-size: 58px;
+  line-height: 1;
+  margin-top: 28px;
+
+  color: #111827;
+}
+
+.ai-desc{
+  margin-top: 22px;
+
+  color: #6b7280;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+/* =========================================
+CHART PREVIEW BOX
+========================================= */
+
+.chart-preview{
+  margin-top: 34px;
+
+  height: 260px;
+
+  border-radius: 28px;
+
+  background: white;
+
+  border: 1px solid #efe5d9;
+
+  position: relative;
+
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================================
+LINE CHART
+========================================= */
+
+.chart-svg{
+  width: 92%;
+  height: 92%;
+}
+
+.grid-line{
+  stroke: #ececec;
+  stroke-width: 1;
+}
+
+/* =========================================
+WATERFALL
+========================================= */
+
+.waterfall-chart{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  gap: 18px;
+
+  padding: 30px;
+}
+
+.wf-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 12px;
+}
+
+.wf-wrapper span{
+  font-size: 12px;
+  font-weight: 700;
+  color: #6b7280;
+}
+
+.wf-bar{
+  width: 42px;
+  border-radius: 14px 14px 0 0;
+}
+
+.wf-bar.positive{
+  background:
+    linear-gradient(
+      180deg,
+      #22c55e,
+      #16a34a
+    );
+}
+
+.wf-bar.negative{
+  background:
+    linear-gradient(
+      180deg,
+      #ef4444,
+      #dc2626
+    );
+}
+
+.wf-bar.total{
+  background:
+    linear-gradient(
+      180deg,
+      #ff6a00,
+      #ff944d
+    );
+}
+
+/* =========================================
+DONUT CHART
+========================================= */
+
+.donut-wrap{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.donut-chart{
+  width: 190px;
+  height: 190px;
+
+  border-radius: 50%;
+
+  background:
+    conic-gradient(
+      #ff6a00 0% 34%,
+      #ff944d 34% 57%,
+      #ffb067 57% 76%,
+      #ffd4b7 76% 100%
+    );
+
+  position: relative;
+}
+
+.donut-chart::after{
+  content: "";
+
+  position: absolute;
+  inset: 30px;
+
+  border-radius: 50%;
+
+  background: white;
+}
+
+.donut-center{
+  position: absolute;
+  inset: 0;
+
+  z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.donut-center strong{
+  font-size: 34px;
+  color: #111827;
+}
+
+.donut-center span{
+  color: #6b7280;
+  margin-top: 6px;
+}
+
+/* =========================================
+SCATTER
+========================================= */
+
+.scatter-chart{
+  width: 90%;
+  height: 90%;
+
+  position: relative;
+}
+
+.scatter-chart span{
+  position: absolute;
+
+  width: 14px;
+  height: 14px;
+
+  border-radius: 50%;
+
+  background: #ff6a00;
+
+  box-shadow:
+    0 0 0 6px rgba(255,106,0,.12);
+}
+
+.scatter-line{
+  position: absolute;
+
+  left: 10%;
+  bottom: 18%;
+
+  width: 78%;
+  height: 3px;
+
+  background: #ffb067;
+
+  transform: rotate(-28deg);
+
+  transform-origin: left center;
+}
+
+/* =========================================
+CHOROPLETH MAP
+========================================= */
+
+.choropleth-chart{
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+}
+
+.map-svg{
+  width: 100%;
+  max-width: 520px;
+
+  height: auto;
+
+  display: block;
+}
+/* =========================================
+CONFIDENCE
+========================================= */
+
+.confidence{
+  margin-top: 30px;
+}
+
+.confidence-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 12px;
+
+  color: #111827;
+  font-weight: 700;
+}
+
+.confidence-bar{
+  height: 12px;
+
+  border-radius: 999px;
+
+  background: #f1e6db;
+
+  overflow: hidden;
+}
+
+.confidence-fill{
+  height: 100%;
+
+  border-radius: 999px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ff6a00,
+      #ff944d
+    );
+}
+
+/* =========================================
+WHY BOX
+========================================= */
+
+.why-box{
+  margin-top: 32px;
+
+  padding-top: 26px;
+
+  border-top: 1px solid #efe3d5;
+}
+
+.why-box h4{
+  margin-bottom: 14px;
+
+  color: #111827;
+  font-size: 15px;
+}
+
+.why-box ul{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+
+  color: #6b7280;
+}
+
+/* =========================================
+RESPONSIVE
+========================================= */
+
+@media(max-width:1000px){
+
+  .demo-card{
+    grid-template-columns: 1fr;
+  }
+
+  .demo-header-content h2{
+    font-size: 32px;
+  }
+
+  .ai-card h3{
+    font-size: 42px;
+  }
+
+}
+
